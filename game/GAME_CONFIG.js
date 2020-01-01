@@ -183,8 +183,7 @@ GAME_CONFIG.guiElements = [
             height: "50px",
             width: "200px",
             top: "0%", // css style
-            left: "0%",
-            backgroundColor: "red"
+            left: "0%"
         },
         onstatchange: function(container) {
 
@@ -197,8 +196,7 @@ GAME_CONFIG.guiElements = [
             height: "50px",
             width: "200px",
             top: "0%", // css style
-            right: "0%",
-            backgroundColor: "red"
+            right: "0%"
         },
         onmove: function(container) {
 

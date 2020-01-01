@@ -1,1 +1,35 @@
-<span>health etc goes here</span>
+<label class="stat_bar">
+    <span>HP</span>
+    <div id="health_bar"></div>
+</label>
+<label class="stat_bar">
+    <span>MP</span>
+    <div id="mana_bar"></div>
+</label class="stat_bar">
+<style>
+.stat_bar{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    padding: 4px;
+}
+.stat_bar > span{
+    min-width: 24px;
+}
+.stat_bar > div{
+    flex: 1;
+    margin-left: 4px;
+}
+.stat_bar > div::before {
+    content: " ";
+    position: absolute;
+    width:100%;
+    height: 20px;
+}
+#health_bar::before {
+    background-color: brown;
+}
+#mana_bar::before {
+    background-color: blue;
+}
+</style>
